@@ -8,6 +8,7 @@ import Login from './screens/Login'
 import '../node_modules/bootstrap-dark-5/dist/css/bootstrap-dark.min.css'
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle'
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'
+import SignUp from './screens/signup.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +19,8 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/footer" element={<Footer />} />
       <Route path='/login' element={<Login />} />
+      <Route path='/signup' element={<SignUp />} />
+      {/* <Route path="/login/signup" element={<SignUp />} /> */}
       {/* <Route path="/contact" element={<Contact />} /> */}
       {/* <Route path="/services" element={<Services />} /> */}
       {/* <Route path="/blog" element={<Blog />} /> */}
